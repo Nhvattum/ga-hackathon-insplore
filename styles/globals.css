@@ -798,6 +798,18 @@ h3 {
   color: rgb(83, 61, 230)
 }
 
+.markerDisplay {
+  display: absolute;
+  left: 0;
+  top: 300px;
+}
+
+.mapContainer {
+  position: absolute;
+  right: 30px;
+  top: 400px;
+}
+
 /* .modal {
   max-width: none;
 }
@@ -825,7 +837,7 @@ h3 {
   z-index: 100;
   position: absolute;
   left: 0;
-  top: 337px;
+  top: 400px;
   direction: rtl;
 
 }

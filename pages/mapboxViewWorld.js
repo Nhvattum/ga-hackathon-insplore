@@ -18,14 +18,37 @@ export default function MapboxViewWorld() {
 
   return (
     <div>
-      <Title />
-      <h3 className="subheading">
-          explore from indoors
-        </h3>
-      <div className="map-body">
-        <MapSidebar show={ show } />
-        <Map0 setShow={ setShow } />
+      <div>
+        <Title />
+        <h3 className="subheading">
+            explore from indoors
+          </h3>
+        <div className="map-body">
+          <MapSidebar show={ show } />
+          <Map0 setShow={ setShow } />
+        </div>
       </div>
+      <html>
+          <head>
+            <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+            <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+          </head>
+          <div>
+            <div className="homeButton">
+              <span onClick={() => router.push('/')}>Return to home page</span>
+            </div>
+          </div>
+            <Title />
+            <div className="map-body">
+              <Map0 />
+              <MapSidebar />
+            </div>
+            <footer>
+            <div className="homeButton">
+              <span onClick={() => router.push('/')}>Return to home page</span>
+            </div>
+            </footer>
+      </html>
     </div>
   )
 } 
