@@ -7,7 +7,7 @@ export default function MapSidebar(props) {
   return(
     <div className="sidebar-whole">
 
-      <Button  variant="primary" onClick={() => setShow(true)}>
+      <Button className="randomButton" variant="primary" onClick={() => setShow(!show)}>
           Details
       </Button>
 
