@@ -1,3 +1,5 @@
+import React from 'react'
+
 // city has:
 // name (String)
 // region (String)
