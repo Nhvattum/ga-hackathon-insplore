@@ -6,7 +6,7 @@ import Title from '../components/title'
 import MapSidebar from './maps/components/map-sidebar'
 
 const Map0 = dynamic(() => import('./maps/components/map0'), {
-  loading: () => <p>Loading...</p>,
+  // loading: () => <p>Loading...</p>,
   ssr: false
 })
 
@@ -14,7 +14,7 @@ const Map0 = dynamic(() => import('./maps/components/map0'), {
 export default function MapboxViewWorld() {
 
   const router = useRouter()
-  const [show, setShow] = useState(false);
+  // const [show, setShow] = useState(false);
 
   return (
     <div>
@@ -24,8 +24,6 @@ export default function MapboxViewWorld() {
             explore from indoors
           </h3>
         <div className="map-body">
-          <MapSidebar show={ show } />
-          <Map0 setShow={ setShow } />
         </div>
       </div>
       <html>
@@ -34,20 +32,17 @@ export default function MapboxViewWorld() {
             <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
           </head>
           <div>
-            <div className="homeButton">
-              <span onClick={() => router.push('/')}>Return to home page</span>
-            </div>
-          </div>
             <Title />
             <div className="map-body">
               <Map0 />
               <MapSidebar />
             </div>
-            <footer>
+            {/* <footer>
             <div className="homeButton">
               <span onClick={() => router.push('/')}>Return to home page</span>
             </div>
-            </footer>
+            </footer> */}
+          </div>
       </html>
     </div>
   )
