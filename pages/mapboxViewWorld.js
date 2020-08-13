@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
 import { useRouter } from 'next/router'
@@ -14,18 +14,18 @@ const Map0 = dynamic(() => import('./maps/components/map0'), {
 export default function MapboxViewWorld() {
 
   const router = useRouter()
-  // const [show, setShow] = useState(false);
+  const [show, setShow] = useState(false);
 
   return (
     <div>
       <Title />
+      <h3 className="subheading">
+          explore from indoors
+        </h3>
       <div className="map-body">
-        <MapSidebar  />
-        <Map0/>
+        <MapSidebar show={ show } />
+        <Map0 setShow={ setShow } />
       </div>
-      <footer>
-        <span onClick={() => router.push('/')}>Return to home page</span>
-      </footer>
     </div>
   )
 } 

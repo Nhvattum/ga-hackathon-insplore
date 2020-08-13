@@ -15,16 +15,18 @@ export default function Home() {
     return(
         <div className="home">
             <Head >
-                <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,700&display=swap" rel="stylesheet"/>
-                <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet"></link>
+                <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@1,700&display=swap" rel="stylesheet"/>
+                <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet"></link>
             </Head>
             <Title />
-            
+            <h3 className="subheading">
+                explore from indoors
+            </h3>
             {/* <Globe /> */}
             <div>
-
                 <Card className="outerCard" style={{ height:'33rem', width: '31em'}}>
                     <div className="xDiv">
+                        Destinations
                         <Link className="xLink" href="/">
                             <a className="aX">
                                 <img className="x" src="/x.png"/>

@@ -12,9 +12,12 @@ export default function Random() {
     return (
         <div>
             <Head >
-                <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,700&display=swap" rel="stylesheet"/>
+                <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet"/>
             </Head>
             <Title />
+            <h3 className="subheading">
+                explore from indoors
+            </h3>
             <StaticGlobe />
             <div className="randomButtons">
                 <button className="randomButton" onClick={() => router.push("/randomDestination")}>Spin Again</button>

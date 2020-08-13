@@ -9,65 +9,35 @@ export default function MapSidebar(props) {
 
       <Button  variant="primary" onClick={() => setShow(true)}>
           Custom Width Modal
-        </Button>
+      </Button>
 
-        <Modal
-          show={show}
-          onHide={() => setShow(false)}
-          dialogClassName="sidebar"
-          aria-labelledby="example-custom-modal-styling-title"
-        >
-          <Modal.Body style={{'max-height': 'calc(100vh - 210px)', 'overflow-y': 'auto'}} dialogClassName="sidebar">
-            <div className="sidebar-banner">
-              <img src="https://i.imgur.com/7Bxx12L.png" title="source: imgur.com" />
-            </div>
-            <div className="sidebar-body">
-              <img src="https://i.imgur.com/OAZfivo.png" title="source: imgur.com" />
-            </div>
-            <div className="sidebar-banner">
-              <img src="https://i.imgur.com/GXGamQK.png" title="source: imgur.com" />
-            </div>
-            <div className="sidebar-body">
-              <img src="https://i.imgur.com/ajnLacq.png" title="source: imgur.com" />
-            </div>
-            <div className="sidebar-banner">
-              <img src="https://i.imgur.com/4Za7EDy.png" title="source: imgur.com" />
-            </div>
-            <div className="sidebar-body">
-              <img src="https://i.imgur.com/PhVvw22.png" title="source: imgur.com" />
-            </div>
-          </Modal.Body>
-        </Modal>
-      {/* <div className="sidebar-banner">
-        <img src="https://i.imgur.com/7Bxx12L.png" title="source: imgur.com" />
-      </div>
-      <div className="sidebar-body">
-        <img src="https://i.imgur.com/OAZfivo.png" title="source: imgur.com" />
-      </div>
-      <div className="sidebar-banner">
-        <img src="https://i.imgur.com/GXGamQK.png" title="source: imgur.com" />
-      </div>
-      <div className="sidebar-body">
-        <img src="https://i.imgur.com/ajnLacq.png" title="source: imgur.com" />
-      </div>
-      <div className="sidebar-banner">
-        <img src="https://i.imgur.com/4Za7EDy.png" title="source: imgur.com" />
-      </div>
-      <div className="sidebar-body">
-        <img src="https://i.imgur.com/PhVvw22.png" title="source: imgur.com" />
-      </div> */}
-      <div className="sidebar-body">
-
-      </div>
-      <div className="sidebar-banner">
-      
-      </div>
-      <div className="sidebar-body">
-
-      </div>
-      <div className="sidebar-banner">
-      
-      </div>
+      <Modal
+        show={props.show}
+        onHide={() => setShow(false)}
+        dialogClassName="sidebar"
+        aria-labelledby="example-custom-modal-styling-title"
+      >
+        <Modal.Body style={{'max-height': 'calc(100vh - 210px)', 'overflow-y': 'auto'}} dialogClassName="sidebar">
+          <div className="sidebar-banner">
+            <img src="https://i.imgur.com/7Bxx12L.png" title="source: imgur.com" />
+          </div>
+          <div className="sidebar-body">
+            <img src="https://i.imgur.com/OAZfivo.png" title="source: imgur.com" />
+          </div>
+          <div className="sidebar-banner">
+            <img src="https://i.imgur.com/GXGamQK.png" title="source: imgur.com" />
+          </div>
+          <div className="sidebar-body">
+            <img src="https://i.imgur.com/ajnLacq.png" title="source: imgur.com" />
+          </div>
+          <div className="sidebar-banner">
+            <img src="https://i.imgur.com/4Za7EDy.png" title="source: imgur.com" />
+          </div>
+          <div className="sidebar-body">
+            <img src="https://i.imgur.com/PhVvw22.png" title="source: imgur.com" />
+          </div>
+        </Modal.Body>
+      </Modal>
     </div>
   )
 }
