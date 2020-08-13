@@ -8,11 +8,11 @@ export default function MapSidebar(props) {
     <div className="sidebar-whole">
 
       <Button  variant="primary" onClick={() => setShow(true)}>
-          Custom Width Modal
+          Details
       </Button>
 
       <Modal
-        show={props.show}
+        show={show}
         onHide={() => setShow(false)}
         dialogClassName="sidebar"
         aria-labelledby="example-custom-modal-styling-title"

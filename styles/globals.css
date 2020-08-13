@@ -821,12 +821,12 @@ h3 {
   position: absolute;
   left: 0;
   top: 50; */
-  width: 45vw;
+  width: 35vw;
   z-index: 100;
   position: absolute;
   left: 0;
   top: 337px;
-  /* direction: rtl; */
+  direction: rtl;
 
 }
 
