@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
-import TestCities from './maps/components/testCities.js'
 import { Card, ListGroup, Button } from 'react-bootstrap'
 
 
